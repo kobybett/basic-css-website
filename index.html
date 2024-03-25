@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <div>
+            <h1>Survey Form</h1>
+            <p>This is a form to submit toward my Responsive Web Design certification on <a href="https://www.freecodecamp.org" target="_blank">freecodecamp.org</a></p>
+            <form id="survey-form">
+                <fieldset>
+                    <label for="name" id="name-label">Name: <input type="text" id="name" name="name" required placeholder="John Doe" /></label>
+                    <label for="email" id="email-label">Email: <input type="email" id="email" name="email" required placeholder="Johndoe@gmail.com" /></label>
+                    <label for="number" id="number-label">Age: <input type="number" id="number" name="number" required min="1" max="120" placeholder="21"/></label>
+                </fieldset>
+                <fieldset>
+                    <label id="select-label">How would you rate this survey?
+                        <select id="dropdown" name="dropdown" required>
+                            <option value="">(select one)</option>
+                            <option value="good">Good</option>
+                            <option value="great">Great</option>
+                            <option value="excellent">Excellent</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend id="radio-legend">Would you take this survey again?</legend>
+                    <label class="inline"><input type="radio" name="radio-response" class="inline" required /> Yes</label>
+                    <label class="inline"><input type="radio" name="radio-response" class="inline" /> No</label>
+                </fieldset>
+                <fieldset>
+                    <legend id="checkbox-legend">Favorite parts</legend>
+                    <label class="checkbox"><input type="checkbox" class="inline" name="colors" value="colors"/> Colors</label>
+                    <label class="checkbox"><input type="checkbox" class="inline" name="design" value="design"/> Design</label>
+                    <label class="checkbox"><input type="checkbox" class="inline" name="simplicity" value="simplicity"/> Simplicity</label>
+                    <label class="checkbox"><input type="checkbox" class="inline" name="organization" value="organization"/> Organization</label>
+                </fieldset>
+                <fieldset>
+                    <label for="comments" id="comments-label">Aditional comments: 
+                        <textarea name="comments" id="comments" rows="3" cols="30" placeholder="Your text here"></textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </body>
+</html>
